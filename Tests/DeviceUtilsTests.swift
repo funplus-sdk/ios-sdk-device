@@ -2,7 +2,7 @@
 //  DeviceUtilsTests.swift
 //  DeviceUtilsTests
 //
-//  Created by 张远坤 on 18/11/2016.
+//  Created by Yuankun Zhang on 18/11/2016.
 //  Copyright © 2016 FunPlus. All rights reserved.
 //
 
