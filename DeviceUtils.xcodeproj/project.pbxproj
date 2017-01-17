@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		D7869C7F1DDEBB8500DF52C6 /* DeviceUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7869C751DDEBB8400DF52C6 /* DeviceUtils.framework */; };
 		D7869C841DDEBB8500DF52C6 /* DeviceUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7869C831DDEBB8500DF52C6 /* DeviceUtilsTests.swift */; };
-		D7869C861DDEBB8500DF52C6 /* DeviceUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = D7869C781DDEBB8400DF52C6 /* DeviceUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D7869C901DDEBCD800DF52C6 /* DeviceUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7869C8F1DDEBCD800DF52C6 /* DeviceUtils.swift */; };
+		D78FAB7F1E2DBA29006D3816 /* DeviceUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = D78FAB7C1E2DBA29006D3816 /* DeviceUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D78FAB801E2DBA29006D3816 /* DeviceUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78FAB7D1E2DBA29006D3816 /* DeviceUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,12 +25,12 @@
 
 /* Begin PBXFileReference section */
 		D7869C751DDEBB8400DF52C6 /* DeviceUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DeviceUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D7869C781DDEBB8400DF52C6 /* DeviceUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceUtils.h; sourceTree = "<group>"; };
-		D7869C791DDEBB8400DF52C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7869C7E1DDEBB8500DF52C6 /* DeviceUtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeviceUtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7869C831DDEBB8500DF52C6 /* DeviceUtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceUtilsTests.swift; sourceTree = "<group>"; };
 		D7869C851DDEBB8500DF52C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D7869C8F1DDEBCD800DF52C6 /* DeviceUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceUtils.swift; sourceTree = "<group>"; };
+		D78FAB7C1E2DBA29006D3816 /* DeviceUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeviceUtils.h; path = Source/DeviceUtils.h; sourceTree = SOURCE_ROOT; };
+		D78FAB7D1E2DBA29006D3816 /* DeviceUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeviceUtils.swift; path = Source/DeviceUtils.swift; sourceTree = SOURCE_ROOT; };
+		D78FAB7E1E2DBA29006D3816 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Source/Info.plist; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +55,7 @@
 		D7869C6B1DDEBB8400DF52C6 = {
 			isa = PBXGroup;
 			children = (
-				D7869C771DDEBB8400DF52C6 /* DeviceUtils */,
+				D7869C771DDEBB8400DF52C6 /* Source */,
 				D7869C821DDEBB8500DF52C6 /* DeviceUtilsTests */,
 				D7869C761DDEBB8400DF52C6 /* Products */,
 			);
@@ -70,13 +70,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D7869C771DDEBB8400DF52C6 /* DeviceUtils */ = {
+		D7869C771DDEBB8400DF52C6 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				D7869C781DDEBB8400DF52C6 /* DeviceUtils.h */,
-				D7869C791DDEBB8400DF52C6 /* Info.plist */,
-				D7869C8F1DDEBCD800DF52C6 /* DeviceUtils.swift */,
+				D78FAB821E2DBACC006D3816 /* Supporting Files */,
+				D78FAB7E1E2DBA29006D3816 /* Info.plist */,
 			);
+			name = Source;
 			path = DeviceUtils;
 			sourceTree = "<group>";
 		};
@@ -89,6 +89,15 @@
 			path = DeviceUtilsTests;
 			sourceTree = "<group>";
 		};
+		D78FAB821E2DBACC006D3816 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D78FAB7C1E2DBA29006D3816 /* DeviceUtils.h */,
+				D78FAB7D1E2DBA29006D3816 /* DeviceUtils.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -96,7 +105,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7869C861DDEBB8500DF52C6 /* DeviceUtils.h in Headers */,
+				D78FAB7F1E2DBA29006D3816 /* DeviceUtils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,7 +160,7 @@
 				TargetAttributes = {
 					D7869C741DDEBB8400DF52C6 = {
 						CreatedOnToolsVersion = 8.1;
-						LastSwiftMigration = 0810;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					D7869C7D1DDEBB8500DF52C6 = {
@@ -200,7 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7869C901DDEBCD800DF52C6 /* DeviceUtils.swift in Sources */,
+				D78FAB801E2DBA29006D3816 /* DeviceUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,7 +340,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = DeviceUtils/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.funplus.sdk.DeviceUtils;
@@ -351,7 +360,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = DeviceUtils/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.funplus.sdk.DeviceUtils;
