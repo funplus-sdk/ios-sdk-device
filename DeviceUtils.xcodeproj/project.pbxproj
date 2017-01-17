@@ -10,6 +10,7 @@
 		D7869C7F1DDEBB8500DF52C6 /* DeviceUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7869C751DDEBB8400DF52C6 /* DeviceUtils.framework */; };
 		D7869C841DDEBB8500DF52C6 /* DeviceUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7869C831DDEBB8500DF52C6 /* DeviceUtilsTests.swift */; };
 		D7869C861DDEBB8500DF52C6 /* DeviceUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = D7869C781DDEBB8400DF52C6 /* DeviceUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7869C901DDEBCD800DF52C6 /* DeviceUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7869C8F1DDEBCD800DF52C6 /* DeviceUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		D7869C7E1DDEBB8500DF52C6 /* DeviceUtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeviceUtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7869C831DDEBB8500DF52C6 /* DeviceUtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceUtilsTests.swift; sourceTree = "<group>"; };
 		D7869C851DDEBB8500DF52C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7869C8F1DDEBCD800DF52C6 /* DeviceUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				D7869C781DDEBB8400DF52C6 /* DeviceUtils.h */,
 				D7869C791DDEBB8400DF52C6 /* Info.plist */,
+				D7869C8F1DDEBCD800DF52C6 /* DeviceUtils.swift */,
 			);
 			path = DeviceUtils;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					D7869C741DDEBB8400DF52C6 = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					D7869C7D1DDEBB8500DF52C6 = {
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7869C901DDEBCD800DF52C6 /* DeviceUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +325,7 @@
 		D7869C8A1DDEBB8500DF52C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -331,6 +337,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.funplus.sdk.DeviceUtils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -338,6 +345,7 @@
 		D7869C8B1DDEBB8500DF52C6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -356,6 +364,7 @@
 		D7869C8D1DDEBB8500DF52C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = DeviceUtilsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.funplus.sdk.DeviceUtilsTests;
@@ -367,6 +376,7 @@
 		D7869C8E1DDEBB8500DF52C6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = DeviceUtilsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.funplus.sdk.DeviceUtilsTests;
@@ -394,6 +404,7 @@
 				D7869C8B1DDEBB8500DF52C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D7869C8C1DDEBB8500DF52C6 /* Build configuration list for PBXNativeTarget "DeviceUtilsTests" */ = {
 			isa = XCConfigurationList;
@@ -402,6 +413,7 @@
 				D7869C8E1DDEBB8500DF52C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
