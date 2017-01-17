@@ -159,14 +159,14 @@ Swift:
 
 ```swift
 let value: CGFloat = 0.3
-DeviceUtils.setScreenBrightness(brightness: value)
+let isSuccess: Bool = DeviceUtils.setScreenBrightness(brightness: value)
 ```
 
 Objective-C:
 
 ```objective-c
 CGFloat value = 0.3;
-[DeviceUtilsOC setScreenBrightnessWithBrightness: value];
+BOOL isSuccess = [DeviceUtilsOC setScreenBrightnessWithBrightness: value];
 ```
 
-Value of the `brightness` parameter should be  between 0 and 1 inclusively.
+Value of the `brightness` parameter should be  between 0.0 and 1.0 inclusively. Values less than 0.0 will be treat as 0.0, and values greater than 1.0 will be treat as 1.

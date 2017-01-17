@@ -46,7 +46,7 @@ import Foundation
         return DeviceUtils.networkCarrierName
     }
     
-    @objc public class func setScreenBrightness(brightness: CGFloat) {
-        DeviceUtils.setScreenBrightness(brightness: brightness)
+    @objc public class func setScreenBrightness(brightness: CGFloat) -> Bool {
+        return DeviceUtils.setScreenBrightness(brightness: brightness)
     }
 }

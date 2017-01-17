@@ -64,12 +64,10 @@ public class DeviceUtils {
     }()
     
     /// Set screen brightness.
-    static func setScreenBrightness(brightness: CGFloat) {
-        guard (0...1).contains(brightness) else {
-            print("Attemp to set the screen brightness to an invalid value: \(brightness), should be between 0 and 1 inclusively.")
-            return
-        }
+    static func setScreenBrightness(brightness: CGFloat) -> Bool {
+        let value = brightness < 0.0 ? 0.0 : brightness > 1.0 ? 1.0 : brightness
+        UIScreen.main.brightness = value
         
-        UIScreen.main.brightness = brightness
+        return true
     }
 }
