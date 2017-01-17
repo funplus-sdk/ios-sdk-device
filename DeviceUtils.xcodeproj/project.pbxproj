@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		D7869C7F1DDEBB8500DF52C6 /* DeviceUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7869C751DDEBB8400DF52C6 /* DeviceUtils.framework */; };
-		D7869C841DDEBB8500DF52C6 /* DeviceUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7869C831DDEBB8500DF52C6 /* DeviceUtilsTests.swift */; };
 		D78FAB7F1E2DBA29006D3816 /* DeviceUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = D78FAB7C1E2DBA29006D3816 /* DeviceUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D78FAB801E2DBA29006D3816 /* DeviceUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78FAB7D1E2DBA29006D3816 /* DeviceUtils.swift */; };
+		D78FAB871E2DBB5E006D3816 /* DeviceUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78FAB831E2DBB2C006D3816 /* DeviceUtilsTests.swift */; };
+		D78FAB881E2DBB62006D3816 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D78FAB841E2DBB2C006D3816 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,11 +27,11 @@
 /* Begin PBXFileReference section */
 		D7869C751DDEBB8400DF52C6 /* DeviceUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DeviceUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7869C7E1DDEBB8500DF52C6 /* DeviceUtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeviceUtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D7869C831DDEBB8500DF52C6 /* DeviceUtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceUtilsTests.swift; sourceTree = "<group>"; };
-		D7869C851DDEBB8500DF52C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D78FAB7C1E2DBA29006D3816 /* DeviceUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeviceUtils.h; path = Source/DeviceUtils.h; sourceTree = SOURCE_ROOT; };
 		D78FAB7D1E2DBA29006D3816 /* DeviceUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeviceUtils.swift; path = Source/DeviceUtils.swift; sourceTree = SOURCE_ROOT; };
 		D78FAB7E1E2DBA29006D3816 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Source/Info.plist; sourceTree = SOURCE_ROOT; };
+		D78FAB831E2DBB2C006D3816 /* DeviceUtilsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeviceUtilsTests.swift; path = Tests/DeviceUtilsTests.swift; sourceTree = SOURCE_ROOT; };
+		D78FAB841E2DBB2C006D3816 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Tests/Info.plist; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				D7869C771DDEBB8400DF52C6 /* Source */,
-				D7869C821DDEBB8500DF52C6 /* DeviceUtilsTests */,
+				D7869C821DDEBB8500DF52C6 /* Tests */,
 				D7869C761DDEBB8400DF52C6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,12 +81,13 @@
 			path = DeviceUtils;
 			sourceTree = "<group>";
 		};
-		D7869C821DDEBB8500DF52C6 /* DeviceUtilsTests */ = {
+		D7869C821DDEBB8500DF52C6 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				D7869C831DDEBB8500DF52C6 /* DeviceUtilsTests.swift */,
-				D7869C851DDEBB8500DF52C6 /* Info.plist */,
+				D78FAB831E2DBB2C006D3816 /* DeviceUtilsTests.swift */,
+				D78FAB841E2DBB2C006D3816 /* Info.plist */,
 			);
+			name = Tests;
 			path = DeviceUtilsTests;
 			sourceTree = "<group>";
 		};
@@ -199,6 +201,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D78FAB881E2DBB62006D3816 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7869C841DDEBB8500DF52C6 /* DeviceUtilsTests.swift in Sources */,
+				D78FAB871E2DBB5E006D3816 /* DeviceUtilsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,7 +377,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = DeviceUtilsTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.funplus.sdk.DeviceUtilsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -386,7 +389,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = DeviceUtilsTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.funplus.sdk.DeviceUtilsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
