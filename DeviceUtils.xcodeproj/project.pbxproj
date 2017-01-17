@@ -12,6 +12,7 @@
 		D78FAB801E2DBA29006D3816 /* DeviceUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78FAB7D1E2DBA29006D3816 /* DeviceUtils.swift */; };
 		D78FAB871E2DBB5E006D3816 /* DeviceUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78FAB831E2DBB2C006D3816 /* DeviceUtilsTests.swift */; };
 		D78FAB881E2DBB62006D3816 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D78FAB841E2DBB2C006D3816 /* Info.plist */; };
+		D78FAB8B1E2DCC02006D3816 /* DeviceUtilsOC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78FAB8A1E2DCC02006D3816 /* DeviceUtilsOC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +33,8 @@
 		D78FAB7E1E2DBA29006D3816 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Source/Info.plist; sourceTree = SOURCE_ROOT; };
 		D78FAB831E2DBB2C006D3816 /* DeviceUtilsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeviceUtilsTests.swift; path = Tests/DeviceUtilsTests.swift; sourceTree = SOURCE_ROOT; };
 		D78FAB841E2DBB2C006D3816 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Tests/Info.plist; sourceTree = SOURCE_ROOT; };
+		D78FAB891E2DCBA8006D3816 /* DeviceUtils-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "DeviceUtils-Swift.h"; path = "Tests/DeviceUtils-Swift.h"; sourceTree = SOURCE_ROOT; };
+		D78FAB8A1E2DCC02006D3816 /* DeviceUtilsOC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeviceUtilsOC.swift; path = Tests/DeviceUtilsOC.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				D78FAB821E2DBACC006D3816 /* Supporting Files */,
-				D78FAB7E1E2DBA29006D3816 /* Info.plist */,
+				D78FAB7D1E2DBA29006D3816 /* DeviceUtils.swift */,
+				D78FAB8A1E2DCC02006D3816 /* DeviceUtilsOC.swift */,
 			);
 			name = Source;
 			path = DeviceUtils;
@@ -94,8 +98,9 @@
 		D78FAB821E2DBACC006D3816 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D78FAB7E1E2DBA29006D3816 /* Info.plist */,
 				D78FAB7C1E2DBA29006D3816 /* DeviceUtils.h */,
-				D78FAB7D1E2DBA29006D3816 /* DeviceUtils.swift */,
+				D78FAB891E2DCBA8006D3816 /* DeviceUtils-Swift.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -213,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D78FAB801E2DBA29006D3816 /* DeviceUtils.swift in Sources */,
+				D78FAB8B1E2DCC02006D3816 /* DeviceUtilsOC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
