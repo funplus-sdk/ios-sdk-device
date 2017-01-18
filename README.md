@@ -1,4 +1,4 @@
-# FunPlus SDK Device Utils
+# Device Utils for iOS
 
 ## Requirements
 
@@ -23,23 +23,39 @@
 
 ## Usage
 
-### Get the Identifier for Vendor
+Before using the APIs, import the framework to your source files.
 
 Swift:
 
 ```swift
-let idfa: String? = DeviceUtils.identifierForVendor
+import DeviceUtils
 ```
 
 Objective-C:
 
 ```objective-c
-NSString *idfa = [DeviceUtilsOC getIdentifierForVendor];
+#import <DeviceUtils/DeviceUtils-Swift.h>
 ```
 
-The returning value might be null.
+### Get Identifier for Vendor
 
-### Get the Advertising Identifier
+This method might return `null`.
+
+Swift:
+
+```swift
+let idfv: String? = DeviceUtils.identifierForVendor
+```
+
+Objective-C:
+
+```objective-c
+NSString *idfv = [DeviceUtilsOC getIdentifierForVendor];
+```
+
+### Get Advertising Identifier
+
+This method might return `null`.
 
 Swift:
 
@@ -53,9 +69,7 @@ Objective-C:
 NSString *idfa = [DeviceUtilsOC getAdvertisingIdentifier];
 ```
 
-The returning value might be null.
-
-### Get the System Name
+### Get System Name
 
 Swift:
 
@@ -69,7 +83,7 @@ Objective-C:
 NSString *systemName = [DeviceUtilsOC getSystemName]
 ```
 
-### Get the System Version
+### Get System Version
 
 Swift:
 
@@ -83,7 +97,7 @@ Objective-C:
 NSString *systemVersion = [DeviceUtilsOC getSystemVersion];
 ```
 
-### Get Device's Model Name
+### Get Device Model Name
 
 Swift:
 
@@ -97,7 +111,7 @@ Objective-C:
 NSString *modelName = [DeviceUtilsOC getModelName()];
 ```
 
-### Get App's Name
+### Get App Name
 
 Swift:
 
@@ -111,7 +125,7 @@ Objective-C:
 NSString *appName = [DeviceUtilsOC getAppName];
 ```
 
-### Get App's Version
+### Get App Version
 
 Swift:
 
@@ -125,7 +139,9 @@ Objective-C:
 NSString *appVersion = [DeviceUtilsOC getAppVersion];
 ```
 
-### Get App's Language
+### Get App Display Language
+
+This method gets the display language for the application, it might be different from the device language.
 
 Swift:
 
@@ -139,7 +155,7 @@ Objective-C:
 NSString *appLanguage = [DeviceUtilsOC getAppLanguage];
 ```
 
-### Get the Network Carrier Name
+### Get Network Carrier Name
 
 Swift:
 
@@ -153,7 +169,11 @@ Objective-C:
 NSString *carrier = [DeviceUtilsOC getNetworkCarrierName];
 ```
 
-### Set the Screen Brightness
+### Set Screen Brightness
+
+Value of the `brightness` parameter should be  between 0.0 and 1.0 inclusively. Values less than 0.0 will be treat as 0.0, and values greater than 1.0 will be treat as 1.
+
+This method returns `false` if the operation fails.
 
 Swift:
 
@@ -168,5 +188,3 @@ Objective-C:
 CGFloat value = 0.3;
 BOOL isSuccess = [DeviceUtilsOC setScreenBrightnessWithBrightness: value];
 ```
-
-Value of the `brightness` parameter should be  between 0.0 and 1.0 inclusively. Values less than 0.0 will be treat as 0.0, and values greater than 1.0 will be treat as 1.
