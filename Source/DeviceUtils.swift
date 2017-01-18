@@ -12,6 +12,8 @@ import CoreTelephony
 
 public class DeviceUtils {
     
+    public static let VERSION = "4.0.0"
+    
     /// Device's identifier for vendor or `nil`.
     static let identifierForVendor: String? = {
         return UIDevice.current.identifierForVendor?.uuidString
