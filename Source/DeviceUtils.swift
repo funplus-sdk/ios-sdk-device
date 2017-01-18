@@ -12,7 +12,7 @@ import CoreTelephony
 
 public class DeviceUtils {
     
-    public static let VERSION = "4.0.0"
+    public static let VERSION = "4.0.1-alpha.0"
     
     /// Device's identifier for vendor or `nil`.
     static let identifierForVendor: String? = {
