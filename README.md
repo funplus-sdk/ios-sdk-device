@@ -169,6 +169,22 @@ Objective-C:
 NSString *carrier = [DeviceUtilsOC getNetworkCarrierName];
 ```
 
+### Get Screen Brightness
+
+This method returns a `CGFloat` value ranged from 0.0 to 1.0 inclusively.
+
+Swift:
+
+```swift
+let brightness: CGFloat = DeviceUtils.getScreenBrightness()
+```
+
+Objective-C:
+
+```objective-c
+CGFloat brightness = [DeviceUtils getScreenBrightness];
+```
+
 ### Set Screen Brightness
 
 Value of the `brightness` parameter should be  between 0.0 and 1.0 inclusively. Values less than 0.0 will be treat as 0.0, and values greater than 1.0 will be treat as 1.

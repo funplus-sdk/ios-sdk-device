@@ -65,6 +65,11 @@ public class DeviceUtils {
         return CTTelephonyNetworkInfo().subscriberCellularProvider?.carrierName ?? "Unknown"
     }()
     
+    /// Get screen brightness.
+    static func getScreenBrightness() -> CGFloat {
+        return UIScreen.main.brightness
+    }
+    
     /// Set screen brightness.
     static func setScreenBrightness(brightness: CGFloat) -> Bool {
         let value = brightness < 0.0 ? 0.0 : brightness > 1.0 ? 1.0 : brightness
